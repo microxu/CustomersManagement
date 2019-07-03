@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.FrankXu.Test.mapper.CustomerNoteMapper">  
+
+
+    <insert id = "insert" parameterType="com.FrankXu.Test.entities.CustomerNote" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO customernote(USERID,NOTE) VALUES(#{userId},#{note});
+    </insert>
+    
+
+    <update id="update" parameterType="com.FrankXu.Test.entities.CustomerNote">
+        UPDATE customernote SET NOTE=#{note} WHERE ID=#{id};
+    </update>
+    
+
+    <select id="find" parameterType="String" resultType="com.FrankXu.Test.entities.CustomerNote">
+        SELECT ID,USERID,NOTE FROM customernote WHERE USERID=#{id};
+    </select>
+    
+
+    <delete id="delete" parameterType="Long">
+        DELETE FROM customernote WHERE ID=#{id};
+    </delete>
+	
+	
+</mapper>

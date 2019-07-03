@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.FrankXu.Test.mapper.CustomerMapper">  
+
+
+    <insert id = "insert" parameterType="com.FrankXu.Test.entities.Customer">
+        INSERT INTO Customer(ID,USERSTATUS,USERNAME,GENDER,AGE,PHONENUMBER,CREATEDATE) VALUES(#{id},ifnull(#{userStatus},"Current"),#{userName},#{gender},#{age},#{phoneNumber},#{createDate});
+    </insert>
+    
+
+    <update id="update" parameterType="com.FrankXu.Test.entities.Customer">
+        UPDATE Customer SET USERSTATUS=#{userStatus} , USERNAME=#{userName} , GENDER = #{gender} ,AGE=#{age} , PHONENUMBER=#{phoneNumber},CREATEDATE=#{createDate} WHERE ID=#{id};
+    </update>
+    
+
+    <select id="find" parameterType="String" resultType="com.FrankXu.Test.entities.Customer">
+        SELECT ID,USERSTATUS,USERNAME,GENDER,AGE,PHONENUMBER,CREATEDATE FROM Customer WHERE ID=#{id};
+    </select>
+    
+
+    <delete id="delete" parameterType="String">
+        DELETE FROM Customer WHERE ID=#{id};
+    </delete>
+	
+    <select id="findAll" resultType="com.FrankXu.Test.entities.Customer">
+        select ID,USERSTATUS,USERNAME,GENDER,AGE,PHONENUMBER,CREATEDATE from Customer;
+    </select>
+	
+    <select id="findAPage" parameterType="map" resultType="com.FrankXu.Test.entities.Customer">
+        select ID,USERSTATUS,USERNAME,GENDER,AGE,PHONENUMBER,CREATEDATE from Customer limit #{currIndex} , #{pageSize};
+    </select>
+	
+</mapper>
