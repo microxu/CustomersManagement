@@ -16,7 +16,7 @@ tags: React,Redux,Saga,Bootstrap,Reselect,Springboot,Mybatis,Swagger,Mysql
 ### 3.Restful APIs
 >you can get API information using the following address:  http://localhost:8080/swagger-ui.html
 
-![image](https://github.com/FrankXu622/PropellerheadTest/blob/master/images/swagger.jpg)
+![image](https://github.com/microxu/CustomersManagement/blob/master/images/swagger.jpg)
 
 #### APIs for external systems:
 >* 1. Add a Customer: POST  /customer
@@ -47,7 +47,7 @@ tags: React,Redux,Saga,Bootstrap,Reselect,Springboot,Mybatis,Swagger,Mysql
 
 ### 3.Below are two screenshots of the UI for modifying customer status, notes and viewing details, including sorting and filter
 
-![image](https://github.com/FrankXu622/PropellerheadTest/blob/master/images/viewandnotes.jpg)
-![image](https://github.com/FrankXu622/PropellerheadTest/blob/master/images/filterandsort.jpg)
+![image](https://github.com/microxu/CustomersManagement/blob/master/images/viewandnotes.jpg)
+![image](https://github.com/microxu/CustomersManagement/blob/master/images/filterandsort.jpg)
 
 ----------
