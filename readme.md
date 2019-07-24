@@ -13,23 +13,6 @@ tags: React,Redux,Saga,Bootstrap,Reselect,Springboot,Mybatis,Swagger,Mysql
 >* 5. Controller
 >* 6. Unit tests that contain all the APIs
 
-`` t e n d s w **e l l** ``
-
-``             **e l l** t h a t e n ``
-
-` `                                 a l l i s w e l l ``
-
->* The result is: t e n d s w e l l t h a t e n a l l i s w e l l
-
-`` a l l i s w **e l l** ``
-
-``             **e l l** t h a **t e n** ``
-
-``                             **t e n** d s w e l l ``
-
->* The result is: a l l i s w e l l t h a t e n d s w e l l
-
-
 ### 3.Restful APIs
 >you can get API information using the following address:  http://localhost:8080/swagger-ui.html
 
